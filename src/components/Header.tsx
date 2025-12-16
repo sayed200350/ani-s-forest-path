@@ -29,9 +29,14 @@ const Header = () => {
           </a>
         </nav>
 
-        <button className="btn-primary text-sm py-3 px-6">
-          Download Free
-        </button>
+        <a 
+          href="https://testflight.apple.com/join/nNuJEw9K" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="btn-primary text-sm py-3 px-6 inline-flex items-center justify-center"
+        >
+          Join Beta
+        </a>
       </div>
     </header>
   );

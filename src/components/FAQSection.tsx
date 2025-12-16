@@ -12,8 +12,8 @@ const FAQSection = () => {
       answer: "Go to Settings in the app and tap 'Restore Purchases'. Make sure you're signed into the same Apple ID you used for the original purchase. If you're still having trouble, contact us at myaniapp@gmail.com with your receipt."
     },
     {
-      question: "How do I delete my account?",
-      answer: "You can delete your account by going to Settings > Account > Delete Account. This will permanently remove all your data including progress, streaks, and purchased content. If you need assistance, email us at myaniapp@gmail.com."
+      question: "Do I need to create an account to use My Ani?",
+      answer: "No, My Ani doesn't create user accounts. All your data follows your Apple ID and is stored privately on your device and iCloud. Since there's no account to create, there's no account to delete—you have full control over your data."
     },
     {
       question: "What iOS version is required?",
@@ -48,8 +48,8 @@ const FAQSection = () => {
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem 
-                key={index} 
+              <AccordionItem
+                key={index}
                 value={`item-${index}`}
                 className="bg-card border border-border/50 rounded-2xl px-6 data-[state=open]:shadow-lg transition-shadow"
               >
@@ -69,8 +69,8 @@ const FAQSection = () => {
           <p className="text-muted-foreground mb-4">
             Still have questions? We're happy to help!
           </p>
-          <a 
-            href="mailto:myaniapp@gmail.com" 
+          <a
+            href="mailto:myaniapp@gmail.com"
             className="btn-primary inline-flex items-center gap-2"
           >
             Contact Support
