@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import aniGood from "@/assets/ani-good.png";
 
 const Header = () => {
@@ -6,14 +7,14 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* App Identity - App Icon + Name */}
         <div className="flex items-center gap-3">
-          <img 
-            src={aniGood} 
-            alt="My Ani App Icon" 
+          <img
+            src={aniGood}
+            alt="My Ani App Icon"
             className="w-10 h-10 rounded-xl object-contain"
           />
           <span className="font-display text-xl font-bold">My Ani</span>
         </div>
-        
+
         <nav className="hidden md:flex items-center gap-8">
           <a href="#features" className="text-foreground/70 hover:text-foreground transition-colors font-medium">
             Features
@@ -27,11 +28,14 @@ const Header = () => {
           <a href="#support" className="text-foreground/70 hover:text-foreground transition-colors font-medium">
             Support
           </a>
+          <Link to="/privacy" className="text-foreground/70 hover:text-foreground transition-colors font-medium">
+            Privacy
+          </Link>
         </nav>
 
-        <a 
-          href="https://testflight.apple.com/join/nNuJEw9K" 
-          target="_blank" 
+        <a
+          href="https://testflight.apple.com/join/nNuJEw9K"
+          target="_blank"
           rel="noopener noreferrer"
           className="btn-primary text-sm py-3 px-6 inline-flex items-center justify-center"
         >

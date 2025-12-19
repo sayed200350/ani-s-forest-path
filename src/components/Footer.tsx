@@ -1,4 +1,5 @@
 import { Twitter, Instagram, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 import aniGood from "@/assets/ani-good.png";
 
 const Footer = () => {
@@ -9,9 +10,9 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <img 
-                src={aniGood} 
-                alt="My Ani App Icon" 
+              <img
+                src={aniGood}
+                alt="My Ani App Icon"
                 className="w-10 h-10 rounded-xl object-contain"
               />
               <span className="font-display text-xl font-bold">My Ani</span>
@@ -35,8 +36,8 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-semibold mb-4">Contact Us</h4>
             <div className="space-y-3">
-              <a 
-                href="mailto:myaniapp@gmail.com" 
+              <a
+                href="mailto:myaniapp@gmail.com"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Mail className="w-4 h-4" />
@@ -58,7 +59,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-border/50 text-sm text-muted-foreground">
           <p>© 2024 My Ani. Made with 🌱 for better focus.</p>
           <nav className="flex items-center gap-6">
-            <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
+            <Link to="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
             <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
           </nav>
         </div>
