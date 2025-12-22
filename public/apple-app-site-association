@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "AZ3UBYX9QX.com.mycompany.norot.app",
+        "paths": [ "/pact/*" ]
+      }
+    ]
+  }
+}
