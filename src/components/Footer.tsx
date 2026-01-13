@@ -1,6 +1,6 @@
 import { Twitter, Instagram, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
-import aniGood from "@/assets/ani-good.png";
+import aniHealthy from "@/assets/ani-healthy.png";
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <img
-                src={aniGood}
+                src={aniHealthy}
                 alt="My Ani App Icon"
                 className="w-10 h-10 rounded-xl object-contain"
               />
@@ -47,7 +47,7 @@ const Footer = () => {
                 <a href="#" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors">
                   <Twitter className="w-4 h-4" />
                 </a>
-                <a href="#" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors">
+                <a href="https://www.instagram.com/myani_app/" className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors">
                   <Instagram className="w-4 h-4" />
                 </a>
               </div>

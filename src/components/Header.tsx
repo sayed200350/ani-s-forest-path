@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import aniGood from "@/assets/ani-good.png";
+import aniHealthy from "@/assets/ani-healthy.png";
 
 const Header = () => {
   return (
@@ -8,7 +8,7 @@ const Header = () => {
         {/* App Identity - App Icon + Name */}
         <div className="flex items-center gap-3">
           <img
-            src={aniGood}
+            src={aniHealthy}
             alt="My Ani App Icon"
             className="w-10 h-10 rounded-xl object-contain"
           />
@@ -34,12 +34,12 @@ const Header = () => {
         </nav>
 
         <a
-          href="https://testflight.apple.com/join/nNuJEw9K"
+          href="https://apps.apple.com/us/app/my-ani-focus-timer-blocker/id6754611254"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-primary text-sm py-3 px-6 inline-flex items-center justify-center"
         >
-          Join Beta
+          Download Now
         </a>
       </div>
     </header>
